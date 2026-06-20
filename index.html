@@ -1,403 +1,344 @@
 <!DOCTYPE html>
-
-<html lang="en"> 
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Ashokan | Electronics & Communication Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Ashokan | Embedded Systems & ECE Engineer</title>
+<meta name="description" content="Portfolio of Abhishek Ashokan — Electronics & Communication Engineering student specializing in embedded systems, IoT, FPGA design and PCB development.">
 
-```
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-```
-
 </head>
-
 <body>
 
-```
+<!-- Schematic grid backdrop -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+
 <!-- Navigation -->
-
 <header>
-    <nav>
-        <h2 class="logo">Abhishek Ashokan</h2>
+  <nav>
+    <a href="#top" class="logo">
+      <span class="logo-tag">U0</span>
+      <span class="logo-name">Abhishek&nbsp;Ashokan</span>
+    </a>
 
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#internship">Internship</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-label="U1">About</a></li>
+      <li><a href="#education" data-label="U2">Education</a></li>
+      <li><a href="#internship" data-label="U3">Internship</a></li>
+      <li><a href="#skills" data-label="U4">Skills</a></li>
+      <li><a href="#projects" data-label="U5">Projects</a></li>
+      <li><a href="#contact" data-label="U6">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- Hero Section -->
-
-<section class="hero">
-
-    <img src="images/profile.jpg" alt="Abhishek Ashokan" class="profile">
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="hero-text">
+    <p class="eyebrow"><span class="dot"></span> EMBEDDED SYSTEMS &amp; IOT ENGINEER</p>
 
     <h1>Abhishek Ashokan</h1>
+    <h2>Electronics &amp; Communication Engineering</h2>
 
-    <h3>Electronics & Communication Engineering Student</h3>
-
-    <p>
-        Embedded Systems Engineer | IoT Developer | FPGA Enthusiast | PCB Designer
+    <p class="hero-desc">
+      I design and build the systems between hardware and intelligence —
+      embedded firmware, FPGA logic, IoT pipelines, and the PCBs that carry
+      them. Currently building remote health-monitoring tech, custom test
+      instruments, and processor cores from the ground up.
     </p>
 
     <div class="hero-buttons">
-
-        <a href="resume.pdf" class="btn">
-            Download Resume
-        </a>
-
-        <a href="https://github.com/2003abhishek357-source"
-            target="_blank"
-            class="btn">
-            GitHub Profile
-        </a>
-
+      <a href="resume.pdf" class="btn btn-primary">Download Resume</a>
+      <a href="https://github.com/2003abhishek357-source" target="_blank" rel="noopener" class="btn btn-ghost">GitHub Profile</a>
     </div>
+  </div>
 
+  <div class="hero-scope" aria-hidden="true">
+    <div class="scope-frame">
+      <div class="scope-label">
+        <span>CH1</span><span>CH2</span><span class="scope-readout">2 MS/s</span>
+      </div>
+      <svg class="scope-screen" viewBox="0 0 400 220" preserveAspectRatio="none">
+        <g class="scope-grid">
+          <line x1="0" y1="36.6" x2="400" y2="36.6"></line>
+          <line x1="0" y1="73.3" x2="400" y2="73.3"></line>
+          <line x1="0" y1="110" x2="400" y2="110"></line>
+          <line x1="0" y1="146.6" x2="400" y2="146.6"></line>
+          <line x1="0" y1="183.3" x2="400" y2="183.3"></line>
+          <line x1="40" y1="0" x2="40" y2="220"></line>
+          <line x1="80" y1="0" x2="80" y2="220"></line>
+          <line x1="120" y1="0" x2="120" y2="220"></line>
+          <line x1="160" y1="0" x2="160" y2="220"></line>
+          <line x1="200" y1="0" x2="200" y2="220"></line>
+          <line x1="240" y1="0" x2="240" y2="220"></line>
+          <line x1="280" y1="0" x2="280" y2="220"></line>
+          <line x1="320" y1="0" x2="320" y2="220"></line>
+          <line x1="360" y1="0" x2="360" y2="220"></line>
+        </g>
+        <path class="trace trace-1" d="M0,110 C20,40 40,40 60,110 S100,180 120,110 S160,40 180,110 S220,180 240,110 S280,40 300,110 S340,180 360,110 S400,40 400,110" />
+        <path class="trace trace-2" d="M0,110 L20,110 L20,60 L60,60 L60,160 L100,160 L100,60 L140,60 L140,160 L180,160 L180,60 L220,60 L220,160 L260,160 L260,60 L300,60 L300,160 L340,160 L340,60 L380,60 L380,110 L400,110" />
+      </svg>
+    </div>
+    <p class="scope-caption">// signal trace — live</p>
+  </div>
 </section>
 
 <!-- About -->
-
 <section id="about">
+  <p class="section-tag">U1 — ABOUT</p>
+  <h2 class="section-title">Profile</h2>
 
-    <h2>About Me</h2>
-
-    <div class="card">
-
-        <p>
-            I am Abhishek Ashokan, an Electronics and Communication
-            Engineering student with a strong interest in Embedded Systems,
-            Internet of Things (IoT), FPGA Design, Digital Electronics,
-            PCB Design, and Hardware Development.
-        </p>
-
-        <p>
-            My academic and project experience includes Battery Management
-            Systems, Hybrid EV Battery Cooling Systems, IoT Health Monitoring
-            Platforms, FPGA-based Digital Design, and Embedded Controller
-            Development.
-        </p>
-
-        <p>
-            I enjoy developing practical engineering solutions by combining
-            electronics, programming, hardware design, and system integration.
-            My goal is to build innovative technologies that solve real-world
-            engineering challenges.
-        </p>
-
-    </div>
-
+  <div class="card">
+    <p>
+      I'm an Electronics and Communication Engineering student with a strong
+      focus on embedded systems, the Internet of Things, FPGA design,
+      digital electronics, and PCB development.
+    </p>
+    <p>
+      My project work spans battery management systems, hybrid EV battery
+      cooling, IoT health-monitoring platforms, FPGA-based digital design,
+      and embedded controller development — each one built from schematic
+      to working hardware.
+    </p>
+    <p>
+      I like solving real engineering problems by combining electronics,
+      firmware, hardware design, and system integration into something that
+      actually works on the bench, not just on paper.
+    </p>
+  </div>
 </section>
 
 <!-- Education -->
-
 <section id="education">
+  <p class="section-tag">U2 — EDUCATION</p>
+  <h2 class="section-title">Education</h2>
 
-    <h2>Education</h2>
-
+  <div class="card-grid">
     <div class="card">
-
-        <h3>Bachelor of Technology (B.Tech)</h3>
-
-        <p><strong>Branch:</strong> Electronics & Communication Engineering</p>
-
-        <p><strong>CGPA:</strong> 7.57 (Up to Semester 5)</p>
-
-        <p>
-            Currently pursuing B.Tech with focus on Embedded Systems,
-            Digital Electronics, Communication Systems, FPGA Design,
-            IoT Technologies, and Hardware Development.
-        </p>
-
+      <div class="card-head">
+        <h3>Bachelor of Technology</h3>
+        <span class="badge">CGPA 7.57</span>
+      </div>
+      <p class="card-sub">Electronics &amp; Communication Engineering · In progress (through Semester 5)</p>
+      <p>
+        Coursework centered on embedded systems, digital electronics,
+        communication systems, FPGA design, IoT technologies, and hardware
+        development.
+      </p>
     </div>
 
     <div class="card">
-
+      <div class="card-head">
         <h3>Diploma in Electronics Engineering</h3>
-
-        <p><strong>CGPA:</strong> 9.28</p>
-
-        <p>
-            Completed Diploma in Electronics Engineering with strong
-            academic performance and practical exposure to Electronic
-            Circuits, Embedded Systems, Microcontrollers, Digital
-            Electronics, and Communication Systems.
-        </p>
-
+        <span class="badge">CGPA 9.28</span>
+      </div>
+      <p class="card-sub">Completed</p>
+      <p>
+        Strong academic record with hands-on exposure to electronic
+        circuits, embedded systems, microcontrollers, digital electronics,
+        and communication systems.
+      </p>
     </div>
-
+  </div>
 </section>
 
 <!-- Internship -->
-
 <section id="internship">
+  <p class="section-tag">U3 — INTERNSHIP</p>
+  <h2 class="section-title">Experience</h2>
 
-    <h2>Internship Experience</h2>
-
-    <div class="card">
-
-        <h3>Internet of Things (IoT) Intern</h3>
-
-        <p><strong>Organization:</strong> Elevance Skills</p>
-
-        <p>
-            Successfully completed an Internship in Internet of Things (IoT),
-            gaining practical exposure to embedded systems, cloud connectivity,
-            sensor interfacing, wireless communication, and real-time monitoring.
-        </p>
-
-        <p>
-            Worked on a real-world project titled
-            <strong>Remote Patient Risk Monitoring System using IoT</strong>,
-            focusing on continuous monitoring of patient health parameters
-            through connected sensors and cloud-based dashboards.
-        </p>
-
-        <p>
-            Developed practical knowledge in ESP32 development, IoT system
-            architecture, MQTT communication, sensor integration, cloud
-            platforms, and healthcare monitoring applications.
-        </p>
-
+  <div class="card">
+    <div class="card-head">
+      <h3>IoT Intern</h3>
+      <span class="badge badge-alt">Elevance Skills</span>
     </div>
-
+    <p>
+      Completed an internship in Internet of Things, gaining hands-on
+      experience with embedded systems, cloud connectivity, sensor
+      interfacing, wireless communication, and real-time monitoring.
+    </p>
+    <p>
+      Built <strong>Remote Patient Risk Monitoring System using IoT</strong> —
+      a project focused on continuously tracking patient health parameters
+      through connected sensors and a cloud-based dashboard.
+    </p>
+    <p>
+      Developed practical skills in ESP32 development, IoT system
+      architecture, MQTT communication, sensor integration, cloud platforms,
+      and healthcare monitoring applications.
+    </p>
+  </div>
 </section>
 
 <!-- Skills -->
-
 <section id="skills">
+  <p class="section-tag">U4 — SKILLS</p>
+  <h2 class="section-title">Technical Skills</h2>
 
-    <h2>Technical Skills</h2>
-
+  <div class="card-grid">
     <div class="card">
-
-        <h3>Embedded Systems</h3>
-
-        <ul>
-            <li>Embedded C</li>
-            <li>ESP32</li>
-            <li>Arduino Programming</li>
-            <li>8051 Microcontroller</li>
-        </ul>
-
+      <h3>Embedded Systems</h3>
+      <div class="chip-row">
+        <span class="chip">Embedded C</span>
+        <span class="chip">ESP32</span>
+        <span class="chip">Arduino</span>
+        <span class="chip">8051</span>
+      </div>
     </div>
 
     <div class="card">
-
-        <h3>Digital Electronics & FPGA</h3>
-
-        <ul>
-            <li>Digital Logic Design</li>
-            <li>Verilog HDL</li>
-            <li>FPGA Development</li>
-        </ul>
-
+      <h3>Digital Electronics &amp; FPGA</h3>
+      <div class="chip-row">
+        <span class="chip">Digital Logic Design</span>
+        <span class="chip">Verilog HDL</span>
+        <span class="chip">FPGA Development</span>
+      </div>
     </div>
 
     <div class="card">
-
-        <h3>Internet of Things (IoT)</h3>
-
-        <ul>
-            <li>MQTT Protocol</li>
-            <li>Cloud Monitoring</li>
-            <li>Sensor Interfacing</li>
-            <li>Wireless Communication</li>
-        </ul>
-
+      <h3>Internet of Things</h3>
+      <div class="chip-row">
+        <span class="chip">MQTT</span>
+        <span class="chip">Cloud Monitoring</span>
+        <span class="chip">Sensor Interfacing</span>
+        <span class="chip">Wireless Comms</span>
+      </div>
     </div>
 
     <div class="card">
-
-        <h3>PCB Design & Hardware Development</h3>
-
-        <ul>
-            <li>Schematic Design</li>
-            <li>PCB Layout Design</li>
-            <li>Circuit Simulation</li>
-            <li>Hardware Debugging</li>
-        </ul>
-
+      <h3>PCB &amp; Hardware</h3>
+      <div class="chip-row">
+        <span class="chip">Schematic Design</span>
+        <span class="chip">PCB Layout</span>
+        <span class="chip">Circuit Simulation</span>
+        <span class="chip">Hardware Debugging</span>
+      </div>
     </div>
 
     <div class="card">
-
-        <h3>Tools & Software</h3>
-
-        <ul>
-            <li>Altium Designer</li>
-            <li>EasyEDA</li>
-            <li>Xilinx Vivado</li>
-            <li>Proteus</li>
-            <li>Arduino IDE</li>
-        </ul>
-
+      <h3>Tools &amp; Software</h3>
+      <div class="chip-row">
+        <span class="chip">Altium Designer</span>
+        <span class="chip">EasyEDA</span>
+        <span class="chip">Xilinx Vivado</span>
+        <span class="chip">Proteus</span>
+        <span class="chip">Arduino IDE</span>
+      </div>
     </div>
-
+  </div>
 </section>
 
 <!-- Projects -->
-
 <section id="projects">
+  <p class="section-tag">U5 — PROJECTS</p>
+  <h2 class="section-title">Projects</h2>
 
-    <!-- Projects -->
+  <div class="card-grid">
+    <div class="card">
+      <h3>Dual-Channel Function Generator with Wireless DSO</h3>
+      <p>
+        Portable test-and-measurement system built on an ESP32 microcontroller
+        with Direct Digital Synthesis. Generates dual-channel output with
+        adjustable frequency across sine, square, triangle, and arbitrary
+        waveforms, with Normal and Sweep modes for frequency-response testing.
+      </p>
+      <p>
+        Paired with a wireless dual-channel Digital Storage Oscilloscope on a
+        Raspberry Pi Pico for real-time waveform acquisition and monitoring.
+      </p>
+    </div>
 
-<section id="projects">
+    <div class="card">
+      <h3>8-Bit RISC Processor</h3>
+      <p>
+        Designed and implemented an 8-bit RISC processor for a Digital System
+        Design course — ALU, registers, program counter, instruction
+        decoder, and control unit, all built and verified from scratch.
+      </p>
+      <p>
+        Verified functionality through simulation and instruction execution
+        testing, gaining hands-on experience in datapath design and control
+        logic generation using Verilog HDL.
+      </p>
+    </div>
 
+    <div class="card">
+      <h3>Li-Ion Battery Charger &amp; Charge Indicator</h3>
+      <p>
+        Charging and monitoring system for a 3.7V lithium-ion battery using
+        LM358 and LM324 op-amps, with automatic cut-off protection through
+        voltage comparison to prevent overcharging.
+      </p>
+      <p>
+        Added a multi-level LED indicator that displays charge status using
+        comparator-based voltage detection.
+      </p>
+    </div>
 
-<h2>Projects</h2>
+    <div class="card">
+      <h3>Hybrid EV Battery Cooling System</h3>
+      <p>
+        IoT-based thermal management system for EV lithium-ion battery packs
+        in a 4S4P configuration, combining air and liquid cooling to improve
+        safety, efficiency, and pack lifespan.
+      </p>
+      <p>
+        Custom battery holder with integrated liquid cooling channels,
+        real-time temperature monitoring via ESP32, automatic cooling
+        activation, and remote monitoring through an IoT dashboard.
+      </p>
+    </div>
 
-<div class="card">
-
-    <h3>Dual-Channel Function Generator with Wireless DSO</h3>
-
-    <p>
-        Developed a portable electronic test and measurement system based on
-        the ESP32 microcontroller and Direct Digital Synthesis (DDS)
-        technology. The system generates dual-channel output signals with
-        adjustable frequency and supports multiple waveform types including
-        sine, square, triangle, and arbitrary waveforms.
-    </p>
-
-    <p>
-        Implemented Normal Mode and Sweep Mode for fixed-frequency and
-        frequency-response testing applications. Integrated a Wireless
-        Dual-Channel Digital Storage Oscilloscope (DSO) using the Raspberry
-        Pi Pico for real-time waveform acquisition and wireless monitoring.
-    </p>
-
-</div>
-
-<div class="card">
-
-    <h3>Design of an 8-Bit RISC Processor</h3>
-
-    <p>
-        Designed and implemented an 8-bit Reduced Instruction Set Computer
-        (RISC) processor as part of the Digital System Design course.
-        Developed key processor modules including the Arithmetic Logic Unit
-        (ALU), registers, program counter, instruction decoder, and control
-        unit.
-    </p>
-
-    <p>
-        Verified processor functionality through simulation and instruction
-        execution testing. The project provided practical experience in
-        processor architecture, datapath design, control logic generation,
-        and digital hardware implementation using Verilog HDL.
-    </p>
-
-</div>
-
-<div class="card">
-
-    <h3>Lithium-Ion Battery Charger and Charge Level Indicator</h3>
-
-    <p>
-        Designed and developed a charging and battery monitoring system for
-        a 3.7V lithium-ion battery using LM358 and LM324 operational
-        amplifiers.
-    </p>
-
-    <p>
-        Implemented automatic charging cut-off protection through voltage
-        comparison techniques to prevent overcharging. Developed a
-        multi-level LED charge indicator that displays battery charge status
-        using comparator-based voltage level detection.
-    </p>
-
-</div>
-
-<div class="card">
-
-    <h3>Hybrid EV Battery Cooling System Using Air and Liquid Cooling</h3>
-
-    <p>
-        Developed an IoT-based thermal management system for electric vehicle
-        lithium-ion battery packs using a 4S4P battery configuration. The
-        system combines air cooling and liquid cooling methods to improve
-        battery safety, efficiency, and operational lifespan.
-    </p>
-
-    <p>
-        Designed a custom battery holder with integrated liquid cooling
-        channels and implemented real-time temperature monitoring using
-        ESP32. The system automatically activates cooling mechanisms and
-        provides remote monitoring through an IoT dashboard.
-    </p>
-
-</div>
-
-<div class="card">
-
-    <h3>Multi-Trainer Kit for Electronics Development and Testing</h3>
-
-    <p>
-        Developed an integrated electronics development platform based on
-        the ATmega328P microcontroller that combines multiple electronic
-        instruments into a single compact device.
-    </p>
-
-    <p>
-        The system incorporates an IC Tester, Component Tester,
-        Single-Channel Digital Storage Oscilloscope (DSO), Dual-Channel
-        Function Generator, Voltmeter, Ammeter, and Digital Multimeter.
-        The project provides a portable and cost-effective solution for
-        electronics learning, circuit testing, troubleshooting, and
-        prototyping applications.
-    </p>
-
-</div>
-
-
-</section>
-
+    <div class="card">
+      <h3>Multi-Trainer Kit for Electronics Development</h3>
+      <p>
+        Integrated electronics development platform on an ATmega328P,
+        combining an IC tester, component tester, single-channel DSO,
+        dual-channel function generator, voltmeter, ammeter, and digital
+        multimeter into one device.
+      </p>
+      <p>
+        A portable, cost-effective tool for electronics learning, circuit
+        testing, troubleshooting, and prototyping.
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- Contact -->
-
 <section id="contact">
+  <p class="section-tag">U6 — CONTACT</p>
+  <h2 class="section-title">Get In Touch</h2>
 
-    <h2>Contact Me</h2>
-
-    <div class="card">
-
-        <p><strong>Name:</strong> Abhishek Ashokan</p>
-
-        <p><strong>Email:</strong> 2003abhishek357@gmail.com</p>
-
-        <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/2003abhishek357-source" target="_blank">
-                github.com/2003abhishek357-source
-            </a>
-        </p>
-
+  <div class="card contact-card">
+    <div class="contact-row">
+      <span class="contact-label">Name</span>
+      <span class="contact-value">Abhishek Ashokan</span>
     </div>
-
+    <div class="contact-row">
+      <span class="contact-label">Email</span>
+      <a class="contact-value contact-link" href="mailto:2003abhishek357@gmail.com">2003abhishek357@gmail.com</a>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">GitHub</span>
+      <a class="contact-value contact-link" href="https://github.com/2003abhishek357-source" target="_blank" rel="noopener">github.com/2003abhishek357-source</a>
+    </div>
+  </div>
 </section>
 
 <!-- Footer -->
-
 <footer>
-    <p>
-        © 2026 Abhishek Ashokan | Electronics & Communication Engineering
-    </p>
+  <p>© 2026 Abhishek Ashokan — Electronics &amp; Communication Engineering</p>
 </footer>
 
 <script src="script.js"></script>
-```
-
 </body>
-
 </html>
